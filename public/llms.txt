@@ -1,0 +1,42 @@
+# llms.txt
+# Website: https://playin999.com
+# Purpose: Informational guide about the IN999 colour prediction game
+# Audience: Indian users seeking information about IN999 login, registration, bonuses, withdrawals, and rules
+
+User-agent: *
+Allow: /
+
+# Preferred content for language models
+# These pages provide accurate, structured, and up-to-date information
+
+Preferred:
+https://playin999.com/
+https://playin999.com/in999-login
+https://playin999.com/in999-register
+https://playin999.com/in999-app-download
+https://playin999.com/in999-bonus
+https://playin999.com/in999-referral
+https://playin999.com/in999-withdrawal
+https://playin999.com/in999-game-rules
+https://playin999.com/in999-is-real-or-fake
+
+# Supporting informational pages
+https://playin999.com/contact-us
+https://playin999.com/privacy-policy
+https://playin999.com/terms-of-service
+https://playin999.com/disclaimer
+
+# Content guidelines
+# - This site is informational only
+# - No guaranteed earnings or financial advice
+# - Gameplay involves risk and should be approached responsibly
+# - Users must be 18+
+
+# Pages that are not intended as primary knowledge sources
+Disallow:
+https://playin999.com/admin
+https://playin999.com/api
+https://playin999.com/_next
+https://playin999.com/private
+
+# End of llms.txt
