@@ -1,4 +1,5 @@
 import CTAButton from "@/components/CTAButton";
+import { Button } from "@/components/ui/button";
 import { CheckCircle2, CloudDownload, Pointer, User2, UserPlus } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,7 +24,7 @@ export const metadata = {
     siteName: "IN999",
     images: [
       {
-        url: "https://playin999.com/og/in999-home.png",
+        url: "https://playin999.com/img/IN999_Game_Banner.webp",
         width: 1200,
         height: 630,
         alt: "IN999 Colour Prediction Game",
@@ -35,13 +36,13 @@ export const metadata = {
     title: "IN999 Colour Prediction Game – Login, Register & Play",
     description:
       "IN999 colour prediction game guide covering login, register, bonuses, withdrawal, and rules.",
-    images: ["https://playin999.com/og/in999-home.png"],
+    images: ["https://playin999.com/img/IN999_Game_Banner.webp"],
   },
   other: {
     keywords:
       "IN999, IN999 colour prediction game, IN999 login, IN999 register, IN999 bonus, IN999 withdrawal",
   },
-}; 
+};
 
 
 export default function Home() {
@@ -77,15 +78,20 @@ export default function Home() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 mt-6">
               <CTAButton text="Register Now" />
+              <Button variant={'default'} className={'bg-blue-600 hover:bg-blue-700 text-white font-bold hover:cursor-pointer'}>
+                <Link rel="nofollow" target="_blank" href="https://t.me/+A6NOdRc2HmkxM2U1" className="flex items-center gap-1 justify-center">
+                  <img src="data:image/png;base64,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" alt="telegram-app" className="w-6 h-6"/> Gift Code Channel
+                </Link>
+              </Button>
             </div>
 
           </div>
           <div className="col-span-12 md:col-end-6 lg:col-span-5">
             <Image
-              src={'/img/IN999-Banner.webp'}
+              src={'/img/IN999_Game_Banner.webp'}
               width={700}
               height={400}
-              alt="IN999 Banner"
+              alt="IN999 Game Banner"
               className="w-full"
             />
           </div>
@@ -113,10 +119,10 @@ export default function Home() {
         <div className="max-w-300 mx-auto grid grid-cols-2 gap-4 sm:gap-6 md:gap-10 lg:gap-12 items-center">
           <div className="col-span-2 lg:col-span-1 lg:px-12">
             <Image
-              src={'/img/convenience.png'}
+              src={'/img/IN999_Color_Prediction_Game.webp'}
               width={600}
               height={400}
-              alt="Instant Registration"
+              alt="IN999 Color Prediction Game"
               className="w-full"
             />
             <div className="mt-4 flex w-full justify-center gap-4 mb-4">
@@ -152,10 +158,10 @@ export default function Home() {
           </div>
           <div className="col-span-2 lg:col-span-1 lg:px-12">
             <Image
-              src={'/img/convenience.png'}
+              src={'/img/IN999_Login_&_Register.webp'}
               width={600}
               height={400}
-              alt="Instant Registration"
+              alt="IN999 Login & Register"
               className="w-full"
             />
             <div className="mt-4 flex w-full justify-center gap-4 mb-4">
@@ -191,10 +197,10 @@ export default function Home() {
         <div className="max-w-300 mx-auto grid grid-cols-2 gap-4 sm:gap-6 md:gap-10 lg:gap-12 items-center">
           <div className="col-span-2 lg:col-span-1 lg:px-12">
             <Image
-              src={'/img/convenience.png'}
+              src={'/img/IN999_Recharge_&_Withdrawal.webp'}
               width={600}
               height={400}
-              alt="Instant Registration"
+              alt="IN999 Recharge & Withdrawal"
               className="w-full"
             />
             <div className="mt-4 flex w-full justify-center gap-4 mb-4">
@@ -257,7 +263,7 @@ export default function Home() {
             </div>
             <div className="bg-brand-100 p-4 rounded-md inline-block">
               <span className="font-medium mr-2">👉 Download guide available here:</span>
-              <a href="#" className="text-brand-600 hover:underline font-bold">IN999 App Download</a>
+              <Link href="/in999-app-download" className="text-brand-800 hover:underline font-bold">IN999 App Download</Link>
             </div>
           </div>
         </div>
@@ -333,11 +339,11 @@ export default function Home() {
             <p className="mb-8 font-medium">Register now and experience fast gameplay with instant withdrawals.</p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <button className="bg-white text-brand-600 px-8 py-3 rounded-full font-bold shadow hover:bg-gray-100 transition transform hover:-translate-y-1">
-                <Link href="#"><UserPlus className="inline w-5 h-5"/> Register Now</Link>
+              <button className="bg-white text-brand-800 px-8 py-3 rounded-full font-bold shadow hover:bg-gray-100 transition transform hover:-translate-y-1">
+                <Link rel="nofollow" href="https://in999.club/#/register?invitationCode=46776342898"><UserPlus className="inline w-5 h-5" /> Register Now</Link>
               </button>
               <button className="bg-brand-800 text-white border border-brand-400 px-8 py-3 rounded-full font-bold shadow hover:bg-brand-900 transition transform hover:-translate-y-1">
-                <Link href={'/in999-app-download'}><CloudDownload className="inline w-5 h-5"/> Download App</Link>
+                <Link href={'/in999-app-download'}><CloudDownload className="inline w-5 h-5" /> Download App</Link>
               </button>
             </div>
           </div>

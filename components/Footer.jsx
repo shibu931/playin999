@@ -69,7 +69,7 @@ export default function Footer() {
                                 placeholder="Enter your email"
                                 className="bg-surface-50 border-surface-200 focus-visible:ring-brand-400"
                             />
-                            <Button className="w-full bg-brand-500 hover:bg-brand-600 text-white font-bold">
+                            <Button className="w-full bg-brand-800 hover:bg-brand-700 text-white font-bold">
                                 Subscribe <Send className="ml-2 h-4 w-4" />
                             </Button>
                         </div>

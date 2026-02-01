@@ -78,7 +78,7 @@ const page = () => {
             </div>
             <div className='col-span-2 md:col-span-1'>
               <Image
-                src="/img/convenience.png"
+                src="/img/IN999_Login_&_Register.webp"
                 height={400}
                 width={400}
                 alt="IN999 Login"

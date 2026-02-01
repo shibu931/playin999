@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://www.playin999.com' // Replace with your actual domain
+  const baseUrl = 'https://playin999.com' // Replace with your actual domain
 
   return [
     {
