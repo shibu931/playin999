@@ -2,11 +2,12 @@ import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter', 
+  variable: '--font-inter',
 })
 
 const merriweather = Merriweather({
@@ -14,7 +15,7 @@ const merriweather = Merriweather({
   weight: ['300', '400', '700', '900'],
   style: ['normal', 'italic'],
   display: 'swap',
-  variable: '--font-merriweather', 
+  variable: '--font-merriweather',
 })
 
 export const metadata = {
@@ -37,12 +38,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-4E7K727L5D"></Script>
+        <Script>
+          {
+            `window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-4E7K727L5D');
+            `
+          }
+        </Script>
       <body
         className={`${inter.variable} ${merriweather.variable}`}
       >
-        <Header/>
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
