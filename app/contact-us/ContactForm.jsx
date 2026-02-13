@@ -104,7 +104,7 @@ const ContactForm = () => {
         {/* Telegram Button */}
         <div className="flex justify-center">
           <a
-            href="https://t.me/lucifier931"
+            href="https://t.me/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-200 shadow-lg"
